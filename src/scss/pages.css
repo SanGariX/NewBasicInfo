@@ -1,0 +1,114 @@
+.wrapper_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.page_content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 80px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 120px;
+    gap: 50px;
+  }
+}
+.page_title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 118px;
+  color: #1f3b73;
+  margin-bottom: 24px;
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+    margin-top: 183px;
+    margin-bottom: 56px;
+  }
+}
+.page_text {
+  display: block;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #1f3b73;
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+  }
+}
+.page_second_title,
+.page_third_title {
+  display: block;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #1f3b73;
+  @media screen and (min-width: 1440px) {
+    font-size: 32px;
+  }
+}
+
+.page_text_list_item {
+  padding-left: 30px;
+  position: relative;
+  display: block;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #1f3b73;
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+  }
+}
+.page_text_list_item::before {
+  content: '';
+  border-radius: 50%;
+  width: 0px;
+  height: 0px;
+  border: 2.5px solid #1f3b73;
+  position: absolute;
+  left: 15px;
+  top: 12px;
+}
+.link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #1f3b73;
+  word-break: break-all;
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+  }
+}
+.link:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+.email {
+  font-weight: 700;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color) !important;
+}
+.page_text_bold {
+  font-weight: 700;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color) !important;
+}

@@ -1,0 +1,114 @@
+.cookies-section {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 999;
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(60px);
+  background: rgba(255, 255, 255, 0.4);
+  @media screen and (min-width: 1440px) {
+    width: 95%;
+    padding: 20px 30px;
+  }
+}
+
+.cookies-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 16px 20px;
+  @media screen and (min-width: 1440px) {
+    padding: 20px 34px;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1440px !important;
+  }
+}
+
+.cookies-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--body);
+  @media screen and (min-width: 1440px) {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--body);
+    max-width: 537px;
+    width: 595px;
+  }
+}
+.cookies-text a {
+  display: block;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #7fc4fa;
+}
+.cookies-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+    gap: 18px;
+  }
+}
+
+.cookies-button {
+  width: 134px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 300ms ease;
+  @media screen and (min-width: 1440px) {
+    width: 183px;
+    height: 51px;
+  }
+}
+
+.cookies-button:hover {
+  opacity: 0.8;
+}
+
+.cookies-accept-js {
+  background: #6a46e5;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+  @media screen and (min-width: 1440px) {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--body);
+  }
+}
+
+.cookies-decline-js {
+  border: 1px solid #6a46e5;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--body);
+  @media screen and (min-width: 1440px) {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--body);
+  }
+}

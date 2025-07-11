@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular);
+
+@import './reset.css';
+@import './pages.css';
+
+@import './header.css';
+@import './hero.css';
+@import './about.css';
+@import './services.css';
+@import './pricing.css';
+@import './contacts.css';
+@import './footer.css';
+
+@import './cookies.css';
+
+:root {
+  --bg: #f5f7fa;
+  --body: #1f3b73;
+  --body-light: #f0f7fe;
+  --header: #97a3b3;
+  --footer: #97a3b3;
+  --font-family: 'Montserrat', sans-serif;
+  --second-family: 'Inter', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  max-width: 375px;
+  min-width: 250px;
+  margin: 0 auto;
+  padding: 0 16px;
+  @media screen and (min-width: 1440px) {
+    max-width: 1440px;
+    padding: 0 72px;
+  }
+}
+.section {
+  padding-bottom: 80px;
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 116px;
+  }
+}
+.title-h2 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: var(--body);
+  width: 100%;
+  margin-bottom: 40px;
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+    margin-bottom: 56px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
