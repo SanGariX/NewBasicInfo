@@ -1,11 +1,11 @@
 {
-  "name": "new-basic-іnfo",
+  "name": "NewBasicInfo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/NewBasicInfo/",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "netlify deploy -p"
